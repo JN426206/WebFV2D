@@ -22,6 +22,7 @@ mgr inż. Jan Nowak
 email: 95jan.nowak@gmail.com   
 Uniwersytet im. Adama Mickiewicza w Poznaniu   
 Wydział Matematyki i Informatyki    
+Promotor: prof. UAM dr hab. Krzysztof Dyczkowski   
 Narzędzie powstało przy współpracy z klubem sportowym KKS Lech Poznań   
 <p align="center">
     <img src="TV2D/images_repo/brands.png"/>
