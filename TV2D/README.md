@@ -109,8 +109,8 @@ Testowane wersje:
 ~~Aby prawidłowo pobrać modele z repozytorium należy oprócz git'a mieć zainstalowany **git-lfs**.~~   
 Lub pobrać modele z https://drive.google.com/drive/folders/1yJgAJzOrdx38-elP1s7tXdHzex5UFR7t?usp=sharing lub liknów podanych w [Modele pretrenowane](#modele-pretrenowane)
 ```
-git clone https://git.wmi.amu.edu.pl/s426206/TV2D.git
-cd TV2D
+git clone https://github.com/JN426206/WebTV2D/
+cd WebTV2D
 ```
 ### Tworzenie środowiska TV2D
 ```bash
