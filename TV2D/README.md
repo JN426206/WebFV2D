@@ -274,7 +274,7 @@ Narzędzie TV2D wydane zostało na licencji [Apache 2.0](LICENSE).
 mgr inż. Jan Nowak   
 email: 95jan.nowak@gmail.com   
 Uniwersytet im. Adama Mickiewicza w Poznaniu   
-Wydział Matematyki i Informatyki
+Wydział Matematyki i Informatyki   
 Promotor: prof. UAM dr hab. Krzysztof Dyczkowski   
 Narzędzie powstało przy współpracy z klubem sportowym KKS Lech Poznań   
 Narzędzie do rozpoznawania pola boiska wdrożone zostało przy współpracy z Zofią Galla (gallazofia@gmail.com)
