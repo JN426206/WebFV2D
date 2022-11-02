@@ -1,7 +1,7 @@
 Narzędzie do uruchomienia narzędzia TV2D jako usługi internetowej.
 
 Wymaga środowiska `python >= 3.7`, `miniconda`, `cuda` oraz systemu `linux`   
-Wymaga stworzenia środowiska conda (dokładna instrukcja instalacji opisana została w pliku [TV2D/README.md](TV2D/README.md#tworzenie-rodowiska-tv2d))   
+Wymaga stworzenia środowiska conda (dokładna instrukcja instalacji opisana została w pliku [TV2D/README.md](TV2D/README.md#tworzenie-środowiska-tv2d))   
 
 Po zainstalowaniu wymaganych zależności oraz stworzeniu środowiska TV2D należy przejść do głównego katalogu tego repozytorium i wykonać polecenia:
 ```
