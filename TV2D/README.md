@@ -275,7 +275,7 @@ mgr inż. Jan Nowak
 email: 95jan.nowak@gmail.com   
 Uniwersytet im. Adama Mickiewicza w Poznaniu   
 Wydział Matematyki i Informatyki
-Promotor: prof. UAM dr hab. Krzysztof Dyczkowski
+Promotor: prof. UAM dr hab. Krzysztof Dyczkowski   
 Narzędzie powstało przy współpracy z klubem sportowym KKS Lech Poznań   
 Narzędzie do rozpoznawania pola boiska wdrożone zostało przy współpracy z Zofią Galla (gallazofia@gmail.com)
 <p align="center">
