@@ -1,9 +1,9 @@
-Narzędzie do uruchomienia narzędzia TV2D jako usługi internetowej.
+Narzędzie do uruchomienia narzędzia FV2D jako usługi internetowej.
 
 Wymaga środowiska `python >= 3.7`, `miniconda`, `cuda` oraz systemu `linux`   
-Wymaga stworzenia środowiska conda (dokładna instrukcja instalacji opisana została w pliku [TV2D/README.md](TV2D/README.md#tworzenie-środowiska-tv2d))   
+Wymaga stworzenia środowiska conda (dokładna instrukcja instalacji opisana została w pliku [FV2D/README.md](FV2D/README.md#tworzenie-środowiska-tv2d))   
 
-Po zainstalowaniu wymaganych zależności oraz stworzeniu środowiska TV2D należy przejść do głównego katalogu tego repozytorium i wykonać polecenia:
+Po zainstalowaniu wymaganych zależności oraz stworzeniu środowiska FV2D należy przejść do głównego katalogu tego repozytorium i wykonać polecenia:
 ```
 python manage.py makemigrations
 python manage.py migrate
@@ -15,7 +15,7 @@ Zalecane jest aby nagrania wideo przetwarzać pojedyńczo.
 
 ## Licencja
 
-Narzędzie WebTV2D wydane zostało na licencji [Apache 2.0](TV2D/LICENSE).
+Narzędzie WebFV2D wydane zostało na licencji [Apache 2.0](FV2D/LICENSE).
 
 ## Autor narzędzia
 mgr inż. Jan Nowak   
@@ -25,7 +25,7 @@ Wydział Matematyki i Informatyki
 Promotor: prof. UAM dr hab. Krzysztof Dyczkowski   
 Narzędzie powstało przy współpracy z klubem sportowym KKS Lech Poznań   
 <p align="center">
-    <img src="TV2D/images_repo/brands.png"/>
+    <img src="FV2D/images_repo/brands.png"/>
 </p>
 
 Narzedzie stworzone i wykorzystywane na potrzeby przedmiotu "Projekt badawczo-rozwojowy" oraz na użytek dla klubu sportowego KKS Lech Poznań
