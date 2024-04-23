@@ -1,4 +1,4 @@
-# TV2D
+# FV2D
 Narzędzie pozwalające na przetworzenie dowolnej transmisji wideo z meczu piłkarskiego do postaci, którą będzie mogła analizować kadra szkoleniowa.
 ## Przykład rezultatu
 <p align="center">
@@ -109,33 +109,33 @@ Testowane wersje:
 ~~Aby prawidłowo pobrać modele z repozytorium należy oprócz git'a mieć zainstalowany **git-lfs**.~~   
 Lub pobrać modele z https://drive.google.com/drive/folders/1yJgAJzOrdx38-elP1s7tXdHzex5UFR7t?usp=sharing lub liknów podanych w [Modele pretrenowane](#modele-pretrenowane)
 ```
-git clone https://github.com/JN426206/WebTV2D/
-cd WebTV2D
+git clone https://github.com/JN426206/WebFV2D/
+cd WebFV2D
 ```
-### Tworzenie środowiska TV2D
+### Tworzenie środowiska FV2D
 ```bash
-conda create --name TV2D python==3.7
-conda activate TV2D
+conda create --name FV2D python==3.7
+conda activate FV2D
 conda install pip -y
 conda install -c pytorch -c conda-forge cudatoolkit=11.1 cudnn tqdm scikit-learn easydict faiss -y
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/torch_stable.html
 pip install opencv-python
 conda install gcc_linux-64 gxx_linux-64 -y
-ln -s ~/miniconda3/envs/TV2D/bin/x86_64-conda-linux-gnu-gcc ~/miniconda3/envs/TV2D/bin/gcc
-ln -s ~/miniconda3/envs/TV2D/bin/x86_64-conda-linux-gnu-g++ ~/miniconda3/envs/TV2D/bin/g++
-cp ~/miniconda3/envs/TV2D/lib/python3.7/_sysconfigdata_x86_64_conda_cos6_linux_gnu.py ~/miniconda3/envs/TV2D/lib/python3.7/_sysconfigdata_x86_64_conda_linux_gnu.py
+ln -s ~/miniconda3/envs/FV2D/bin/x86_64-conda-linux-gnu-gcc ~/miniconda3/envs/FV2D/bin/gcc
+ln -s ~/miniconda3/envs/FV2D/bin/x86_64-conda-linux-gnu-g++ ~/miniconda3/envs/FV2D/bin/g++
+cp ~/miniconda3/envs/FV2D/lib/python3.7/_sysconfigdata_x86_64_conda_cos6_linux_gnu.py ~/miniconda3/envs/FV2D/lib/python3.7/_sysconfigdata_x86_64_conda_linux_gnu.py
 python -m pip install detectron2==0.6 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.10/index.html
 pip install tensorflow==2.8.0 segmentation-models gluoncv Shapely moviepy kornia django
-conda env config vars set LD_LIBRARY_PATH=~/miniconda3/envs/TV2D/lib
+conda env config vars set LD_LIBRARY_PATH=~/miniconda3/envs/FV2D/lib
 conda deactivate
-conda activate TV2D
+conda activate FV2D
 ```
-### Dla trenowania homografii (doinstalować do środowiska TV2D):
+### Dla trenowania homografii (doinstalować do środowiska FV2D):
 ```bash
 pip install lxml
 pip install -U albumentations[imgaug]
 ```
-### Narzędzie do wizualizacji w środowisku TV2D(vizualize_tool/visualize/):
+### Narzędzie do wizualizacji w środowisku FV2D(vizualize_tool/visualize/):
 ```bash
 conda install -c anaconda pyqt 
 conda install -c conda-forge pyside2 
@@ -143,8 +143,8 @@ conda install -c conda-forge pyinstaller
 ```
 ### Narzędzie do wizualizacji osobne środowisko (vizualize_tool/visualize/):
 ```bash
-conda create --name TV2D_VT python==3.7
-conda activate TV2D_VT
+conda create --name FV2D_VT python==3.7
+conda activate FV2D_VT
 conda install -c anaconda pyqt 
 conda install -c conda-forge pyside2 
 conda install -c conda-forge pyinstaller 
@@ -173,16 +173,16 @@ Utworzyć w repozytorium katalog data następnie skopiować pobrany plik do tego
 Dane z dnia 16.12.2021r.
 ## Uruchamianie
 ```bash
-conda activate TV2D
-python TV2D.py --video-input data/lplw2.mp4
+conda activate FV2D
+python FV2D.py --video-input data/lplw2.mp4
 # Eksport danych do pliku
-python TV2D.py --video-input data/lplw2.mp4 --export-data-path data/lplw2.csv
+python FV2D.py --video-input data/lplw2.mp4 --export-data-path data/lplw2.csv
 #Zapisanie wizualizacji do pliku wideo
-python TV2D.py --video-input data/lplw2.mp4 --output data/pred_lplw2.mp4
+python FV2D.py --video-input data/lplw2.mp4 --output data/pred_lplw2.mp4
 ```
 ## Uruchamiania narzędzia do wizualizacji:
 ```
-conda activate TV2D_VT
+conda activate FV2D_VT
 cd vizualize_tool/visualize/
 python widget.py
 ``` 
@@ -268,7 +268,7 @@ https://github.com/google-research/football
 
 ## Licencja
 
-Narzędzie TV2D wydane zostało na licencji [Apache 2.0](LICENSE).
+Narzędzie FV2D wydane zostało na licencji [Apache 2.0](LICENSE).
 
 ## Autor narzędzia
 mgr inż. Jan Nowak   
